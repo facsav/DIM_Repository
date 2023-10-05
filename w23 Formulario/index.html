@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap" rel="stylesheet">
+    <script defer src="../main.js"></script>
+</head>
+<body>
+    <header></header>
+    <!---------Cuerpo---------->
+
+    <section class="container-fluid justify-content-center cuerpo">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6 justify-content-center columnasss">  
+                <h1 id="body-title">Órdenes médicas digitales</h1>
+                <p id="body-p">
+                    Te pedimos por favor que completes este formulario para poder
+                     coordinar tu teleconsulta con un profesional, quien será el
+                      responsable de extender tu orden médica. La enviaremos dentro
+                       de las 72 horas hábiles desde que se realizó el pedido.<br><br>
+                    Las órdenes y/o recetas médicas gestionadas a través de este servicio
+                     se realizarán únicamente con fecha actual (no fechas a futuro),
+                      para tratamientos o patologías que figuren en tu historia clínica
+                       o bien tus chequeos periódicos reglamentarios. Puede solicitarlas
+                        con tu médico habitual u otro de demanda espontánea.<br><br>
+                    Tienen una validez de 7 días desde la emisión de las mismas.
+                </p>
+            </div>
+            <div class="col-12 col-lg-4 justify-content-center columnasss" id="centrado-mobile">
+                <div class="tarjeta">
+                    <div class="card-body">
+                        <label>Nombre y apellido</label>
+                        <input type="text" placeholder="Josefina Gonzales" class="width-todo">
+
+                        <label>Fecha de nacimiento</label>
+                        <input type="date" placeholder="22/05/1998" class="width-todo">
+
+                        <label>DNI</label>
+                        <input type="text" placeholder="12345678" class="width-todo">
+
+                        <label>Correo electrónico</label>
+                        <input type="email" placeholder="josefinagonzales@gmail.com" class="width-todo">
+
+                        <label>Télefono de contacto</label>
+                        <input type="tel" placeholder="ej: 01123456789, 1512345678" class="width-todo">
+
+                        <h2>¿Te atendiste alguna vez en DIM?</h2>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Si
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              No
+                            </label>
+                        </div>
+
+                        <h2>¿Cual es tu disponibilidad horaria?</h2>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Por la mañana (de 8 a 12h)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Por la tarde (de 12 a 17 h)
+                            </label>
+                        </div>
+                        
+                        <label style="margin-top: 2em;">Médico con el que te atendes habitualmente</label>
+                        <input type="text" placeholder="Nombre del médico" class="width-todo">
+
+                        <div class="d-flex">
+                            <button class="normas-operativas" type="button">
+                                Siguiente paso
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!---------Footer---------->
+    <footer></footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</body>
+</html>

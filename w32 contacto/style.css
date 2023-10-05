@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --homeBackground: #FFFFFF;
+    --orange: #FF6600;
+    --blue:#006299;
+    --bgColor: #DCD8CC;
+    --darkblue: #002133;
+    --titulos:white;
+    --bgprimary: #F7F7F7;
+    --bgform: #F2F2F2;
+    --bgformstroke: #E6E6E6;
+    --orangeHover: #de5900;
+}
+
+body{
+    background-color: var(--homeBackground);
+    font-family: Rubik;
+    
+}
+
+h1{
+    font-weight: 700;
+}
+.filtro{
+    display: none;
+}
+
+/* ---- HOME ----*/
+
+#home{
+    z-index: 10;
+    background-image: url(./assets/images/backgroundW32.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0%, 100% 0%, 100% 81%, 0% 100%);
+    background-position:0 10vh;
+    height: 95vh;
+}
+
+#home ul{
+    list-style: none;
+    margin-left: -30px;
+}
+
+#home li{
+    color: black;
+    margin: 22px 0px 22px 0px;
+}
+
+#home #tel{
+    height: 35px;
+    background-image: url(./assets/images/telephone.svg);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+#home #wpp{
+    height: 35px;
+    background-image: url(./assets/images/wpp.svg);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+#home #clock{
+    height: 35px;
+    background-image: url(./assets/images/clock.svg);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+#home #mail{
+    height: 35px;
+    background-image: url(./assets/images/mail.svg);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    padding-top: -1px;
+}
+
+#home .row{
+    min-height: 105vh;
+    max-height: auto
+}
+#home h1{
+    font-size: 52pt;
+    line-height: 52pt;
+    margin: 1.8em 0 0.7em 0;
+    width: 70%;
+}
+#home p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    width: 45%;
+}
+#home img{
+    display: none;
+}
+
+
+#home2{
+    min-height: 120vh;
+    max-height: auto;
+    margin-bottom: 30vh;
+}
+
+
+
+/* Primera Fila */
+
+/* WHITE CARD */
+#home2 #whiteCard{
+    width: 100%;
+    height: 309px;
+    z-index: 20;
+    margin: -5em 0 20px 0;
+    padding: 2.5% 0 2.5% 0;
+    border-radius: 24px;
+    background:#FFF;
+    box-shadow: 0px 2.767256498336792px 2.2138051986694336px 0px rgba(0, 0, 0, 0.02), 0px 6.650102138519287px 5.32008171081543px 0px rgba(0, 0, 0, 0.03), 0px 12.521552085876465px 10.017241477966309px 0px rgba(0, 0, 0, 0.04), 0px 22.3363094329834px 17.869047164916992px 0px rgba(0, 0, 0, 0.04), 0px 41.777610778808594px 33.422088623046875px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+}
+
+#whiteCard h5{
+    font-weight: 700;
+    font-size: 18px;    
+}
+
+#whiteCard .contactoItem{
+    margin: 1.2rem;
+}
+
+#whiteCard p{
+    height: 10px;
+}
+
+
+/* Segunda Fila */
+#secondRowCards{
+    width: 100%;
+}
+
+/* WHITE CARD 2 */
+#home2 #whiteCard2{
+    z-index: 20;
+    height: 698px;
+    margin-bottom: 1.5rem;
+}
+
+#home2 #whiteCard2 #contenedor{
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+    background:#FFF;
+    /* Long Shadow */
+    box-shadow: 0px 2.767256498336792px 2.2138051986694336px 0px rgba(0, 0, 0, 0.02), 0px 6.650102138519287px 5.32008171081543px 0px rgba(0, 0, 0, 0.03), 0px 12.521552085876465px 10.017241477966309px 0px rgba(0, 0, 0, 0.04), 0px 22.3363094329834px 17.869047164916992px 0px rgba(0, 0, 0, 0.04), 0px 41.777610778808594px 33.422088623046875px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+}
+#whiteCard2 ul{
+    margin-left: -20px;
+}
+#whiteCard2 li{
+    width: 404px;
+    height: 39px;
+    border-radius: 8px;
+    background: #F7F7F7;
+    margin: 10px 0 10px;
+}
+.consulta .svg-a{
+    margin-left: 15px;
+}
+.consulta a{
+    text-decoration: none;
+}
+.consulta svg{
+    height: 24px;
+    width: 24px;
+}
+.consulta img{
+    margin-right: 17.5px;
+}
+.icon-path {
+    transition: fill 0.1s;
+}
+  
+#whiteCard2 a{
+    color: black;
+    width: 404px;
+    height: 39px;
+    border-radius: 8px;
+    background: #F7F7F7;
+    transition: color 0.2s;
+}
+
+#whiteCard2 li:hover a, 
+#whiteCard2 li:hover .icon-path{
+    fill: var(--orange);
+    color:var(--orange);
+}
+
+#whiteCard2 li:hover .icon-path2{
+    stroke: var(--orange);
+}
+.seguirnos{
+    background:linear-gradient(#013766,#050B12);
+    padding: 25px;
+    border-radius: 24px;
+    color: white;
+    margin: 3% 0 10em auto;
+    z-index: 0;
+    height: max-content;
+}
+.seguirnos div{
+    display: grid;
+    justify-content: center;
+}
+.seguirnos h4{
+    font-size: 14px;
+    color: var(--orange);
+}
+.seguirnos h1{
+    font-size: 32px;
+}
+.seguirnos p{
+    font-size: 16px;
+    font-weight: 300;
+}
+#home2 #mail{
+    position: relative;
+    height: 50px;
+    min-height: max-content;
+    margin: 3% 0;
+    display: flex;
+    justify-content: center;
+}
+#mail input{
+    border-radius: 12px;
+    border-color:transparent;
+    font-family: Rubik;
+}
+#button-imput{
+    position:absolute;
+    right: 0;
+    margin: 5px 6px;
+    background-color: var(--orange);
+    border-radius: 12px;
+    border-color: transparent transparent;
+    color: white;
+}
+
+@media (max-width: 460px){
+    .seguirnos{
+        width: 98vw;
+    }
+    #mail input{
+        width: 80vw;
+    }
+    #button-imput{
+        right: 3vw;
+    }
+}
+
+@media (max-width: 992px) {
+    #home{
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+        background-image: none;
+        background-color: var(--bgColor);
+        height: auto;
+    }
+    #home div{
+        padding: 0 3%;
+    }
+    #home h1{
+        font-size: 32px;
+        line-height: 32px;
+        margin-top: 20vh;
+        width: 100%;
+    }
+    #home p{
+        width: 100%;
+        font-size: 16px;
+    }
+    #home img{
+        display: block;
+        width: 100%;
+        padding: 0px !important;
+        margin: -25vh 0 5vh 0;
+    }
+    #home2{
+        height: auto;
+    }
+    #home2 #whiteCard{
+        width: 342px;
+        height: 819px;      
+    }
+    #home2 #whiteCard2{
+        width: 362px;
+    }
+    #whiteCard2 li{
+        width: 268px;
+        height: 39px;
+        font-size: 12px;
+    }
+}
+

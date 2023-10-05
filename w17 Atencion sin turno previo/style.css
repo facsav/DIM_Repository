@@ -1,0 +1,195 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --homeBackground: #E1E2E4;
+    --orange: #FF6600;
+    --blue:#006299;
+    --orangeHover: #de5900;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Rubik;
+    
+}
+
+h1{
+    font-weight: 700;
+}
+
+
+/* ------------------------------------------------------------ HOME ------------------------------------------------------------*/
+
+.my-custom-margin {
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+#home{
+    z-index: -1;
+    background-image: url(./assets/backgroundW17.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0%, 100% 0%, 100% 81%, 0% 100%);
+    background-position:center;
+    background-color: var(--homeBackground);
+    
+
+}
+
+#backgroundPhone{
+    height: 0vh;
+}
+
+#home .row{
+    height: 110vh ;
+}
+
+#home h1{
+    color: #000000;
+    font-size: 63px;
+    line-height: 65px;
+    margin: 0px 0px 18px 0px;
+}
+
+#home p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+
+}
+/* ------------------------------------------------------------ HOME2 ------------------------------------------------------------*/
+
+
+#home2{
+    margin-top: -5rem;
+    min-height: 80vh;
+    height: auto;
+    margin-bottom: 10em;
+}
+#home2 .col-6{
+    z-index: 1;
+    height: inherit;
+}
+
+#accordionContentLg{
+    width: 555px;
+}
+
+#accordionContentLg .accordion-item{
+    margin:0px 0px 11px 0px ;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    border-top: 1px solid #E6E6E6;
+}
+
+#accordionContentLg .accordion-button{
+    background-color: transparent;
+    width: 555px;
+    height: 58px;
+}
+
+#accordionContentLg p{
+    font-weight: 200;
+}
+.paragraph{
+    margin: 2em auto 10em 3em;
+}
+/* on Phone */
+
+
+#accordionContent{
+    width: 307px;
+    height: auto;
+    background: #FFFFFF;
+    z-index: 1;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+    border-radius: 24px;
+    margin-bottom: 2rem;
+}
+
+#accordionContent_h2{
+    margin: 40px 0px 50px 0px;
+    width: 309px;
+    height: 36px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #002133;
+    
+}
+
+#accordionContent .accordion-item{
+    margin:10px 0px 10px 0px ;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    border-top: 1px solid #E6E6E6;
+}
+
+#accordionContent .accordion-button{
+    background-color: transparent;
+}
+
+#accordionContent p{
+    font-weight: 200;
+}
+
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+    #home{
+        z-index: -1;
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+        background: var(--homeBackground);
+    }
+     #backgroundPhone{
+        background: url(./assets/backgroundW17Phone.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height:40vh;
+        width: 100%;
+        margin-bottom: -10vh;
+    }
+    #home .row{
+        height: auto;
+    }
+    #home .col{
+        margin-top: 15vh;
+        display: grid;
+        place-items: center;
+    }
+    #home2 {
+        margin-bottom: 40vh;
+        height: auto;
+    }
+    #home2 .row{
+        height: auto;
+        display: grid;
+        place-items: center;
+    }
+    #home2 p {
+        display: grid;
+        place-items: center;
+    }
+}
+
+
+
+
+
+
+
+

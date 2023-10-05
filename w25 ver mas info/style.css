@@ -1,0 +1,277 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --homeBackground: #777095;
+    --orange: #FF6600;
+    --blue:#006299;
+    --orangeHover: #de5900;
+}
+
+
+body{
+
+    font-family: Rubik;
+    
+}
+
+h1{
+    font-weight: 700;
+}
+
+/* ------------------------------------------------------------ HOME ------------------------------------------------------------*/
+
+
+
+#home{
+    z-index: -1;
+    background-image: url(./assets/backgroundW25.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0%, 100% 0%, 100% 81%, 0% 100%);
+    background-position:center;
+    background-color: var(--homeBackground);
+    padding-top:6rem ;
+    height: 95vh;
+}
+
+#home .row{
+    height: 85vh;
+}
+
+#home h1{
+    color: white;
+    font-size: 63px;
+    line-height: 65px;
+    margin: 0px 0px 95px 0px;
+}
+
+#home img{
+    display: none;
+}
+
+#home h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+
+}
+
+#home ul{
+    list-style: none;
+    margin-left: -30px;
+}
+
+#home li{
+
+    color: white;
+    margin: 22px 0px 22px 0px;
+}
+
+
+#home #tel{
+    height: 35px;
+    background-image: url(./assets/telephone.svg);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+#home #wpp{
+    height: 35px;
+    background-image: url(./assets/wpp.svg);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+#home #pc{
+    height: 35px;
+    background-image: url(./assets/pc.svg);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+/* ------------------------------------------------------------ HOME2 ------------------------------------------------------------*/
+
+
+#home2{
+    background-color: white;
+    min-height: 135vh;
+    max-height: auto;
+}
+
+#home2 .row{
+    height: inherit;
+}
+#home2 .col{
+    height: inherit;
+}
+
+#home2 p{
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+
+#home2 #solicitaTurno{
+
+    width: 365px;
+    height: 589px;
+    background: linear-gradient(180deg, #013766 47.74%, #050B12 104.89%);
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+    border-radius: 24px;
+    display: grid;
+    place-items: center;
+    color: white;
+    margin-bottom: 40vh;
+}
+
+#home2 #solicitaTurno h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+#home2 hr{
+    border-color: #ffffff; 
+    border-style: solid; 
+    border-width: 1px 0 0 0; 
+    width: 20rem;
+}
+
+#home2 #solicitaTurno p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+#home2 #solicitaTurno .turnos{
+    width: 321px;
+}
+
+#home2 #solicitaTurno a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#home2 #equipo{
+    width: 339px;
+    margin-top: 53px;
+}
+
+#home2 #equipo ul{
+    margin-top: 30px;
+}
+
+
+
+
+/* acordeon */
+
+.accordion{
+    margin-bottom: 10em;
+}
+#accordionContentLg{
+    margin: 45px 0px 25px 0px;
+    width: 555px;
+}
+
+#accordionContentLg .accordion-item{
+    margin:0px 0px 11px 0px ;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    border-top: 1px solid #E6E6E6;
+}
+#accordionContentLg .accordion-button{
+    background-color: transparent;
+    width: 555px;
+    height: 58px;
+}
+
+#accordionContentLg p{
+    font-weight: 200;
+}
+
+/* on Phone */
+
+
+#accordionContent{
+    width: 357px;
+    height: auto;
+    background: #FFFFFF;
+    z-index: 1;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+    border-radius: 24px;
+    margin-bottom: 2rem;
+}
+
+#accordionContent_h2{
+    margin: 40px 0px 50px 0px;
+    width: 309px;
+    height: 36px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #002133;
+}
+
+#accordionContent .accordion-item{
+    margin:10px 0px 10px 0px ;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    border-top: 1px solid #E6E6E6;
+}
+
+#accordionContent .accordion-button{
+    background-color: transparent;
+}
+
+#accordionContent p{
+    font-weight: 200;
+}
+
+@media (max-width: 991px) {
+    #home{
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+        background: var(--homeBackground);
+        padding-top: 6rem;
+        height: auto;
+    }
+    #home .row{
+        height: max-content;
+    }
+    #home img{
+        display: block;
+        width: 100%;
+    }
+    #home h1{
+        font-size: 60px;
+        margin-top: 0.5em;
+        margin-bottom: 0.2em;
+    }
+    #home .text-start{
+        margin-bottom: 0;
+    }
+    #home2 iframe{
+        margin-top: 5rem;
+    }
+    #home2 #solicitaTurno{
+
+        width: 345px;
+    }
+}
+
+

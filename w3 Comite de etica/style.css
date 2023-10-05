@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --homeBackground: #F5F5F7;
+    --orange: #FF6600;
+    --blue:#006299;
+    --banner: #FAFAFA;
+    --bgColor: #E5E5E5;
+    --darkblue: #184781;
+    --orangeHover: #de5900;
+}
+
+body{
+    background-color: var(--homeBackground);
+    font-family: Rubik;
+    
+}
+
+h1{
+    font-weight: 700;
+}
+
+
+
+/* ---- HOME ----*/
+
+#home{
+    background-image: url(./img/banner_3.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0%, 100% 0%, 100% 81%, 0% 100%);
+    z-index: -20;
+    position: relative;
+    color: #E5E5E5;
+}
+#home .row{
+    height: 95vh;
+}
+#home h1{
+    font-size: 52pt;
+    line-height: 52pt;
+    margin: 2em 0 0.4em 0;
+    width: 55%;
+}
+#home h2{
+    display: none;
+}
+#home p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    width: 40%;
+}
+#home img{
+    display: none;
+}
+@media(max-width:1199px){
+    #home h1{
+        width: 80%;
+    }
+    #home p{
+        width:60%;
+    }
+}
+@media(max-width:991px){
+    #home{
+        clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0% 100%);
+    }
+    #home .row{
+        height: 130vh;
+    }
+    #home h1{
+        font-size: 44pt;
+        line-height: 44pt;
+        margin-top: 20vh;
+        width: 100%;
+    }
+    #home p{
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    #home{
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+        background-image: none;
+        background-color: #0098F4;
+    }
+    #home .row{
+        height: max-content;
+    }
+    #home div{
+        padding: 0 3%;
+    }
+    #home h1{
+        display: none;
+    }
+    #home h2{
+        display: block;
+        font-size: 38px;
+        line-height: 38px;
+        margin-top: 20vh;
+        margin-bottom: 1em;
+    }
+    #home p{
+    width: 100%;
+    }
+    #home img{
+        display: block;
+        width: 100%;
+        margin-top: 5vh;
+    }
+}
+
+
+/** ------------------Cuerpo--------------------- **/
+#mobile{
+    display: none;
+}
+.cuerpo {
+    position: relative;
+    margin: 0 0 30vh 0;
+}
+.cuerpo::before{
+    content: "";
+    background-color: var(--darkblue);
+    width: 852px;
+    height: 852px;
+    border-radius: 100%;
+    position: absolute;
+    left: -670px;
+    top: -200px;
+    z-index: -10;
+}
+.cuerpo::after{
+    content: "";
+    width: 350px;
+    height: 350px;
+    background-color: transparent;
+    border: none;
+    border-top-left-radius: 100%;
+    border-top: 200px solid var(--orange);
+    border-left: 200px solid var(--orange);
+    position: absolute;
+    bottom: -30vh;
+    right: 0;
+    z-index: -10;
+}
+#text-body{
+    margin: 0 2vw 0 0vw;
+    padding: 0 0 0 2em;
+}
+/**-------------------------Card-----------------------------**/
+.tarjeta {
+    margin: -8vh 0 0 2vw;
+    background: linear-gradient(180deg, #013766 47.74%, #050B12 104.89%);
+    border-radius: 20px;
+    padding: 2em 2em;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+}
+.tarjeta h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0.5em 0 12px 0;
+}
+.tarjeta h4{
+    font-size: 14px;
+    font-weight:bold;
+    color: #FF6600;
+    margin: 0 0 2em 0;
+}
+#linea1{
+    width: 100%;
+    height: 0.5px;
+    background-color: #296CA6;
+}
+#linea2{
+    width: 100%;
+    height: 0.5px;
+    background-color: black;
+    margin-bottom: 30px;
+}
+.tarjeta h3{
+    font-size: 16px;
+    font-weight:normal;
+    color: white;
+    margin: 0 0 1.5em 0;
+}
+.telefono{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 100%;
+    margin: 0 3px 0 0;
+}
+.tarjeta span{
+    margin: 0 0 0 0.5em;
+}
+#mail{
+    color: #56CCF2;
+    margin: 0 0 0 14%;
+}
+.normas-operativas{
+    font-size: 18px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    height: 45px;
+    width: 100%;
+    font-weight: 500;
+}
+@media (max-width: 991px) {
+    .cuerpo{
+        margin-bottom: 35vh;
+    }
+    .cuerpo::before{
+        display: none;
+    }
+    .cuerpo::after{
+        display: none;
+    }
+    #text-iframe{
+        padding: 0 4%;
+    }
+    #text-iframe h1{
+        font-size: 26px;
+    }
+    #text-iframe p{
+        font-size: 18px;
+    }
+    .float__start, .float__end{
+        float: none;
+    }
+    .card__info{
+        margin: 0 auto 5em auto;
+    }
+    #computer{
+        display: none;
+    }
+    #mobile{
+        display: block;
+        margin-bottom: 50vh;
+    }
+    .tarjeta{
+        margin: 10vh 0 0 0;
+    }
+    #text-body{
+    margin: 10vh 0 0 0;
+    padding: 0 1.5em 0 1.5em;
+    }
+    #text-body h1{
+        font-size: 36px;
+    }
+}
+

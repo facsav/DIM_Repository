@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --homeBackground: #FFFFFF;
+    --orange: #FF6600;
+    --blue:#006299;
+    --bgColor: #E6E6E6;
+    --darkblue: #002133;
+    --titulos:white;
+    --bgprimary: #F7F7F7;
+    --bgform: #F2F2F2;
+    --bgformstroke: #E6E6E6;
+    --orangeHover: #de5900;
+}
+
+body{
+    background-color: var(--homeBackground);
+    font-family: Rubik;
+    
+}
+
+h1{
+    font-weight: 700;
+}
+.filtro{
+    display: none;
+}
+
+/* ---- HOME ----*/
+
+#home{
+    background-image: url(./assets/backgroundW31.svg);
+    background-position: 0 10vh;
+    background-repeat: no-repeat;
+    z-index: 10;
+    position: relative;
+    color: black;
+    height: auto;
+    background-color: var(--bgColor);
+}
+
+#home ul{
+    margin-bottom: 57px;
+}
+
+#home li{
+    list-style: none;
+    background-image: url(../img/tilde.svg);
+    background-repeat: no-repeat;
+    padding-left: 44px;
+    margin: 16px 0px 16px -30px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: left;
+
+
+}
+
+#home .row{
+    min-height: 105vh;
+    max-height: auto
+}
+#home h1{
+    font-size: 52pt;
+    line-height: 52pt;
+    margin: 3em 0 0.7em 0;
+    width: 70%;
+}
+#home p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    width: 45%;
+}
+#home img{
+    display: none;
+}
+@media (max-width: 992px) {
+    #home{
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+        background-image: none;
+        background-color: var(--bgColor);
+        height: auto;
+    }
+    #home .row{
+        height: max-content;
+    }
+    #home div{
+        padding: 0 3%;
+    }
+    #home h1{
+        font-size: 32px;
+        line-height: 32px;
+        margin-top: 20vh;
+        width: 100%;
+    }
+    #home p{
+        width: 100%;
+        font-size: 16px;
+    }
+    #home img{
+        display: block;
+        width: 100%;
+        margin: 5vh 0 5vh 0;
+    }
+}
+
+/* Acordions HOME */
+
+
+
+#accordionContentLg{
+    width: 555px;
+}
+
+#accordionContentLg .accordion-item{
+    margin:0px 0px 11px 0px ;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    border-top: 1px solid #E6E6E6;
+}
+
+#accordionContentLg .accordion-button{
+    background-color: transparent;
+    width: 555px;
+    height: 58px;
+}
+
+#accordionContentLg p{
+    font-weight: 200;
+}
+
+/* on Phone */
+
+
+#accordionContent{
+    width: 357px;
+    min-height: 45vh;
+    max-height: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+    border-radius: 24px;
+    margin-bottom: 2rem;
+    margin-bottom: 40vh;
+}
+
+#accordionContent_h2{
+    padding: 20px 0px 20px 0px;
+    width: 309px;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #002133;
+    
+}
+
+#accordionContent .accordion-item{
+    margin:10px 0px 10px 0px ;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    border-top: 1px solid #E6E6E6;
+}
+
+
+#accordionContent .accordion-button{
+    background-color: transparent;
+}
+
+#accordionContent p{
+    font-weight: 200;
+}
+
+
+

@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --homeBackground: #FFFFFF;
+    --orange: #FF6600;
+    --blue:#006299;
+    --bgColor: #F2F2F0;
+    --darkblue: #002133;
+    --titulos:white;
+    --bgprimary: #F7F7F7;
+    --bgform: #F2F2F2;
+    --bgformstroke: #E6E6E6;
+    --orangeHover: #de5900;
+    --bluetext:#002133
+}
+
+body{
+    background-color: var(--homeBackground);
+    font-family: Rubik;
+    
+}
+
+h1{
+    font-weight: 700;
+}
+.filtro{
+    display: none;
+}
+
+/** ------------------Cuerpo--------------------- **/
+
+.cuerpo {
+    position: relative;
+    background: linear-gradient(90deg, #E4ECEF 60%,white);
+    z-index: -20;
+}
+.cuerpo .row .columnasss{
+    margin: 30vh 0 0 0;
+}
+.columnasss::after{
+    content: "";
+    width: 1000px;
+    height: 1000px;
+    background-color: transparent;
+    border: 250px solid #184781;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -100vh;
+    left: -500px;
+    z-index: -10;
+}
+.cuerpo::after{
+    content: "";
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    border: none;
+    border-top-left-radius: 100%;
+    border-top: 250px solid var(--orange);
+    border-left: 250px solid var(--orange);
+    position: absolute;
+    bottom: 499px;
+    right: 0;
+    z-index: -10;
+}
+.cuerpo::before{
+    content: "";
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    border: none;
+    border-bottom-left-radius: 100%;
+    border-bottom: 250px solid var(--orange);
+    border-left: 250px solid var(--orange);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -10;
+}
+#body-title{
+    font-size: 52pt;
+    line-height: 55pt;
+    margin-bottom: 1em;
+    color: var(--bluetext);
+}
+#body-p{
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--bluetext);
+    width: 90%;
+}
+/**-------------------------Card-----------------------------**/
+.tarjeta {
+    background: linear-gradient(180deg,#014E7A, #001019);
+    border-radius: 20px;
+    padding: 2em 3em;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+    margin: 1em auto 7em auto;
+    max-width: 323px;
+}
+.card-body label{
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    width: 100%;
+    font-weight: 500;
+    margin: 0 0 0.5em 0;
+}
+.card-body input{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+.card-body .width-todo{
+    width: 100%;
+    border-radius: 6px;
+    padding: 6px;
+    color: #737373;
+    margin: 0 0 2em 0;
+}
+.tarjeta h2{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    color: white;
+    margin: 1em 0 1em 0;
+}
+.normas-operativas{
+    font-size: 18px;
+    line-height: 27px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    height: 45px;
+    width: 100%;
+    font-weight: 500;
+}
+@media(max-width: 1232px){
+    #body-title{
+        font-size: 48pt;
+    }
+}
+@media(max-width: 1141px){
+    #body-title{
+        font-size: 46pt;
+    }
+}
+@media(max-width: 1096px){
+    #body-title{
+        font-size: 40pt;
+    }
+}
+@media (max-width: 991px) {
+    .cuerpo {
+        position: relative;
+        background: linear-gradient(180deg, #E4ECEF 70%,white);
+    }
+    .columnasss::after{
+        display: none;
+    }
+    .cuerpo .row .columnasss{
+        margin: 20vh 0 0 0;
+    }
+    #centrado-mobile{
+        margin: 0 auto 15em auto;
+    }
+    #body-title{
+        padding: 0 4%;
+        font-size: 32px;
+        line-height: 35px;
+    }
+    #body-p{
+        width: 100%;
+        padding: 0 4%;
+    }
+    .tarjeta{
+        margin-bottom: 20vh;
+    }
+}
+@media (max-width:505px){
+    .cuerpo::after{
+        width: 350px;
+        height: 350px;
+        bottom: 349px;
+        border-top: 200px solid var(--orange);
+        border-left: 200px solid var(--orange);
+    }
+    .cuerpo::before{
+        width: 350px;
+        height: 350px;
+        bottom: 0;
+        border-bottom: 200px solid var(--orange);
+        border-left: 200px solid var(--orange);
+    }
+}
+@media(max-width:360px){
+    .normas-operativas{
+        font-size: 16px;
+    }
+    .cuerpo::after{
+        width: 300px;
+        height: 300px;
+        bottom: 299px;
+        border-top: 150px solid var(--orange);
+        border-left: 150px solid var(--orange);
+    }
+    .cuerpo::before{
+        width: 300px;
+        height: 300px;
+        bottom: 0;
+        border-bottom: 150px solid var(--orange);
+        border-left: 150px solid var(--orange);
+    }
+}

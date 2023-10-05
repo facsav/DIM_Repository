@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --homeBackground: #F5F5F7;
+    --orange: #FF6600;
+    --blue:#006299;
+    --banner: #FAFAFA;
+    --bgColor: #E5E5E5;
+    --darkblue: #184781;
+    --textBlue: #002133;
+    --bgformstroke:#E6E6E6;
+    --titulos:white;
+    --bgprimary: #F7F7F7;
+    --bgform: #F2F2F2;
+    --orange:#FF6600;
+    --home3Background:#F1F1F1;
+    --orangeHover: #de5900;
+}
+
+body{
+    background-color: var(--homeBackground);
+    font-family: Rubik;
+}
+
+h1{
+    font-weight: 700;
+}
+
+
+/* ---- HOME ----*/
+
+#home{
+    background-image: url(./img/banner-9.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0%, 100% 0%, 100% 81%, 0% 100%);
+    z-index: -20;
+    position: relative;
+    color: #051422;
+}
+#home .row{
+    height: 95vh;
+}
+#home h1{
+    font-size: 52pt;
+    line-height: 52pt;
+    margin: 1.7em 0 0.4em 0;
+    width: 55%;
+}
+#home p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    width: 50%;
+}
+#home img{
+    display: none;
+}
+@media (max-width: 1199px){
+    #home p{
+        width: 70%;
+    }
+}
+@media (max-width: 991px){
+    #home p{
+        width: 100%;
+    }
+}
+/* @media (max-width: 808px){
+
+} */
+@media (max-width: 767px){
+    #home{
+        background-image: url(./img/odontologia.jpg);
+        clip-path: none;
+    }
+    #home .row {
+        height: 150vh;
+    }
+    #home h1{
+        font-size: 32px;
+        line-height: 43px;
+        margin-top: 20vh;
+    }
+}
+
+
+
+/** ------------------Acordions--------------------- **/
+.accordions{
+    background-color: var(--titulos);
+    border-radius: 24px;
+    padding: 3%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    color: var(--textBlue);
+}
+.accordions h1{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-left: 0.5em;
+}
+.accordion-header {
+    background-color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--bgformstroke);
+    margin: .7em 0 0 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 20;
+    transition: all 0.3s ease;
+}
+.accordion-header.active {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom: transparent;
+}
+.accordion-content {
+    padding: 10px;
+    display: none;
+    border: 1px solid var(--bgformstroke);
+    border-top: transparent;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.accordion-content p {
+    margin: 0;
+    font-weight: 500;
+}
+.accordion-content.active {
+    display: block;
+}
+.accordion-header svg {
+    float: right;
+    margin: 7px 0 0 0;
+    transition: all 0.3s ease;
+}
+.accordion-header.active svg{
+    transform: rotate(180deg) translateY(2px);
+}
+
+/**-----------------Card-----------------------------**/
+.tarjeta {
+    margin: -8vh 0 0 2vw;
+    background: linear-gradient(180deg, #013766 47.74%, #050B12 104.89%);
+    border-radius: 20px;
+    padding: 2em 2em;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+    color: white;
+}
+.tarjeta h1{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 50px;
+    margin: 0.5em 0 12px 0;
+}
+.tarjeta h2{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+}
+.tarjeta h3{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.tarjeta h4{
+    font-size: 14px;
+    font-weight:bold;
+    line-height: 24px;
+    color: #FF6600;
+    margin: 0 0 2em 0;
+}
+#linea1{
+    width: 100%;
+    height: 0.5px;
+    background-color: #296CA6;
+    margin-bottom: 1px;
+}
+#linea2{
+    width: 100%;
+    height: 0.5px;
+    background-color: black;
+    margin-bottom: 30px;
+}
+.tarjeta ul{
+    list-style-type: none;
+    margin: 1em auto 0 -2em;
+}
+.tarjeta ul li{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 40px;
+    margin: 1em 0;
+}
+.tarjeta ul li:nth-child(1):before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    background-image: url(img/wsp.svg);
+    background-size: cover;
+}
+.tarjeta ul li:nth-child(2):before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    background-image: url(img/email.svg);
+    background-size: cover;
+}
+.tarjeta a{
+    color: white;
+    font-weight: 700;
+}
+.normas-operativas{
+    font-size: 18px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    height: 45px;
+    width: 100%;
+    font-weight: 500;
+}
+.normas-operativas img {
+    margin-right: 0.5em;
+}
+@media (max-width: 808px){
+    .tarjeta {
+        margin: 5vh 0;
+    }
+}
+#tercer-section{
+    background-image: url(./img/banner-9-2.jpg);
+    background-size:cover;
+    background-position:right center;
+    background-repeat: no-repeat;
+    z-index: -20;
+    color: white;
+}
+#tercer-section .row{
+    padding: 4em;
+    margin-top: 5em;
+}
+#tercer-section .col-lg-8{
+    margin-left: 2vw;
+}
+#tercer-section h1{
+    font-size: 52pt;
+    line-height: 52pt;
+    margin: 0 0 0.4em 0;
+}
+#tercer-section p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 75%;
+    z-index: 50;
+}
+#tercer-section img{
+    display: none;
+}
+@media (max-width: 808px){
+    #tercer-section h1{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    #tercer-section p{
+        width: 100%;
+    }
+    #tercer-section .col-lg-8{
+        margin-left: 0;
+    }
+}
+@media (max-width: 767px) {
+    #tercer-section{
+        background-image: url(./img/baner-diente.png);
+        background-size:cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        z-index: -20;
+        color: white;
+        height: calc(200vh);
+        padding: 0 0;
+    }
+    #tercer-section .row{
+        padding: 0 0;
+    }
+    #tercer-section .col-12{
+        padding: 5%;
+    }
+}
+    

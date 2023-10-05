@@ -1,0 +1,176 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --homeBackground: #E8F3FB;
+    --orange: #FF6600;
+    --blue:#006299;
+    --texth1: #002133;
+    --orangeHover: #de5900;
+}
+
+
+body{
+    background-color: black;
+    font-family: Rubik;
+    background-color: var(--homeBackground);
+    background-image: url(./assets/backgroundW16.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+h1{
+    font-weight: 700;
+}
+
+
+/* ------------------------------------------------------------ HOME ------------------------------------------------------------*/
+
+
+
+#home .container{
+    padding-top: 5rem;
+    height: auto;
+}
+
+#home .row{
+    height: inherit;
+}
+
+
+#home .col{
+    height: inherit;
+}
+
+#home img{
+    display: none;
+}
+
+#home h1{
+    color:var(--texth1);
+    font-size: 62.75px;
+    line-height: 64.99px;
+    margin: 61px 0 61px 61px;
+}
+
+#home2{
+    height: auto;
+    margin-bottom: 10rem;
+}
+
+#home2 .p-content{
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    width: 616px;
+    height: 512px;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+    border-radius: 24px;
+
+}
+
+#masInfo{
+    width: 349px;
+    height: 265px;
+    background: linear-gradient(180deg, #013766 47.74%, #050B12 104.89%);
+    /* Long Shadow */
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+    border-radius: 24px;
+}
+
+#masInfo h5{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+#masInfo ul{
+    list-style: none;
+    color: white;
+}
+#masInfo a{
+    color: var(--orange);
+}
+#masInfo li{
+margin: 12.5px 0px 12.5px 0px;
+}
+
+#masInfo .central{
+    background-image: url(./img/footer/phone.svg);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+#masInfo .mails{
+    background-image: url(./img/footer/mail.svg);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+#masInfo hr{
+    border-color: #ffffff; 
+    border-style: solid; 
+    border-width: 1px 0 0 0; 
+    width: 18rem;
+
+}
+
+
+
+@media (max-width: 1200px) {
+   
+    #home2 .p-content{
+        font-size: 14px;
+        line-height: 20px;
+        width: 500px;
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    body{
+        background-image: none;
+    }
+    #home .container{
+        display: grid;
+        place-items: center;
+    }
+    #home h1{
+        font-size: 52px;
+        line-height: 52px;
+        margin: 10vh 0 5vh 0;
+        width: 100%;
+    }
+    #home p{
+        width: 100%;
+        font-size: 16px;
+    }
+    #home img{
+        display: block;
+        width: 100%;
+        margin-top: 5vh;
+    }
+    #home .turnos{
+        margin:30px 0 0 -15px;
+    }
+    #home2{
+        height: auto;
+        display: grid;
+        place-items: center;
+        margin-bottom: 15rem;
+    }
+}
